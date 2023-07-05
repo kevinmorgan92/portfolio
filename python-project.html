@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Morgan Portfolio</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div id="preloader">
+        <div id="preloader_inner"></div>
+    </div>
+
+<!-- Navigation Section. Links for the different pages in the website and a place to store logo -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+                My<span>Portfolio</span>
+                <!--Below HTML to add a logo when created instead of font to the top of the page-->
+                <!-- <img src="images/logotest.png" alt="test logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="module.html">Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- The BANNER SECTION of the About Me Page -->
+
+    <div class="page-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Python Programming Project 1</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content project-detail">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-md-8">
+                    <div class="video">
+                        <h3>Python Project 1</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pi99iLc-1hc" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Introduction
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        For this project the following problem was proposed. You are the owner of a hardware shop specializing in screws
+                                        called Simply Screws which sells a range of screws to an
+                                        eager DIY
+                                        public. Screws are classified by length (20, 40 or 60 mm), material (brass or steel), head type (slot head, star
+                                        head,
+                                        or pozidriv).
+                                        Screws are sold in boxes of 50, 100 or 200, with larger boxes discounted for bulk buy at 10% and 15% of the
+                                        equivalent
+                                        number
+                                        of screws bought in boxes of 50 (e.g. if a box of 50 screws costs £5, a box of 100 will cost £9, and a box of 200
+                                        will
+                                        cost £17). A
+                                        ‘unit of stock’ is defined as 50 screws
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Project Requirements
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        The program should be able to perform the following functionality using Python.
+                                        <br>• Read in data from the text file containing details of the records held in stock and store these into a List
+                                        data
+                                        structure.
+                                        Note that your code is not expected to write updated data to the file.
+                                        <br>• Implement a set of menu options:
+                                        <br><strong>BASIC FEATURES</strong>
+                                        <br>1. Output a list of screw types available and their respective details, including a summary report displaying
+                                        <br>(a) the
+                                        total
+                                        number of units in stock and <br>(b) the total value of the stock.
+                                        <br>2. Output a report giving the total number of units in stock in each length category.
+                                        <br>3. Output a list of screws and their respective details which based on a length category entered by the user.
+                                        <br><strong>ADVANCED FEATURES</strong>
+                                        <br>4. Query if a particular screw category (where the category is defined by specifying the length, material and
+                                        head type)
+                                        is available and present options of <br>(a) increasing stock level or <br>(b) decreasing the stock level, by x unit
+                                        of whatever
+                                        box size they’ve selected due to a sale. In the case of a sale: <br>(a) if the order exceeds the stock level the
+                                        user should
+                                        be informed that the order can only partially fulfilled and asked if they wish to continue with the order, <br>(b)
+                                        the total
+                                        cost of the final order should be shown. You can assume that a user can only order one type of screw and box size
+                                        at a time.
+                                        <br>5. Create a discount feature where the user is told what screw category has the largest number of screws in
+                                        stock and
+                                        asked if they wish to place a 10% discount feature on that category to encourage sales. If another discount is
+                                        currently running the user should be asked if they which continue with it or stop it. At most one category should be
+                                        discounted at any one time.
+                                        <br>6. Plot a labelled bar chart that presents the number of units existing for each length category.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Code Sample Screenshots
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="owl-carousel owl-theme photo-carousel">
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/Screenshot_python1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/Screenshot_python2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/Screenshot_python3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/Screenshot_python4.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/Screenshot_python5.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/Screenshot_python6.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/Screenshot_python7.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/Screenshot_python8.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/Screenshot_python9.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/Screenshot_python10.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/Screenshot_python11.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sidebar">
+                        <div class="widget">
+                            <h2>All Projects</h2>
+                            <ul>
+                                <li><a href="python-project.html">Python Programming Project 1</a></li>
+                                <li><a href="java-project.html">Java Programming Project 1</a></li>
+                                <li><a href="web-project.html">Interactive Web Authoring Project 1</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget">
+                            <h2>Project Detail</h2>
+                                <div class="project-detail">
+                                    <div class="item">
+                                    <div class="name">Module Name</div>
+                                    <div class="value">COM101-Programming 1</div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">Date Submitted</div>
+                                    <div class="value">November 2022</div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">Grade Achieved</div>
+                                    <div class="value">88%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- FOOTER SECTION of the page. Somewhere to show website logo and a brief closing comment -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo d-flex justify-content-center">
+                        <img src="images/logo-no-background.png" alt="">
+                    </div>
+                    <div class="description">
+                        
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        Copyright 2023, All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="" class="scrollup">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- J Query inserted below -->   
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/filter.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

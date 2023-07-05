@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Morgan Portfolio</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div id="preloader">
+        <div id="preloader_inner"></div>
+    </div>
+
+<!-- Navigation Section. Links for the different pages in the website and a place to store logo -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+                My<span>Portfolio</span>
+                <!--Below HTML to add a logo when created instead of font to the top of the page-->
+                <!-- <img src="images/logotest.png" alt="test logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="module.html">Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- The BANNER SECTION of the About Me Page -->
+
+    <div class="page-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Java Programming Project 1</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content project-detail">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-md-8">
+                    <div class="video">
+                        <h3>Java Project 1</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1fPOl48QOUE" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Introduction
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        This assignment is concerned with the use of arrays to store and manage objects. Write a Java program to
+                                        store and manage data from a set of students enrolled on a course according to the following requirements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Project Requirements
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        1. The application needs only to involve one course. There is a need to record details about each student
+                                        enrolled on the course.
+                                        <br>2. The application must allow for up to a maximum of 20 students to be enrolled on the course.
+                                        <br> For each student, their name, date of birth (dd/mm/yyyy), gender, study mode i.e.PT(Part time) or
+                                        FT(Full time), what year they are in and number of modules to be taken (in the range of 1 to 6) should
+                                        be stored.
+                                        <br>4. For each student, the program will work out the tuition fee as follows.
+                                        <br>(a) For a FT student, the tuition fee is £5000 for Year 1, Year 2 and Year 4 students and £2500 for
+                                        a Year 3 student who is on placement.
+                                        <br>(b) For a PT student, the tuition fee is calculated based on the number of modules to be taken
+                                        (£750 per module).
+                                        <br>5. The program needs to enable students to be added to the course or deleted from the course. There
+                                        is no requirement to have any facility to modify student details after they have been created.
+                                        Hint: deleting data from an array may leave a blank space in the array, so keep a count of the total
+                                        number of students and search for the next free array cell when adding another student.
+                                        <br>6. It must be possible to report (i.e. print to the screen) on the course. This report should indicate the
+                                        course name, the total number of PT and FT students enrolled and the percentages of these students
+                                        who are male and female.
+                                        <br>7. At the end of a session, when the program is being terminated, the course details along with the
+                                        details for each enrolled student including the computed tuition fee should be written to disk. These
+                                        details should be recorded in two standard text files: one containing course details (called
+                                        “CourseDetails.txt”) and the other holding all the student records, to be called “StudentDetails.txt”.
+                                        Hint: don’t save blank records to disk, check that there is a valid “student” object in each array cell
+                                        before writing its contents to disk. If any of the fields within a student’s details have been left blank
+                                        (string length of zero) then that student is invalid and their details should not be written to disk.
+                                        <br>8. When the program is started, it should read from these standard text files to re-populate the
+                                        application with any previously stored data as a starting point.
+                                        Hint: each record requires a new instance of the Student class to be created and linked to the next
+                                        available free cell in your array. You may want to check whether the tuition fee has been updated for
+                                        each student enrolled.
+                                        <br>9. The program user must also be able to search for a student by name, causing the sought student’s
+                                        details including the tuition fee to be paid to be displayed if present. Note that you can assume each
+                                        student’s name will be unique.
+                                        <br>10. The program must employ a console interface only.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Code Sample Screenshots
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="owl-carousel owl-theme photo-carousel">
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/java_screen1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen4.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen5.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen6.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen8.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen9.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen10.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen11.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen12.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen13.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen14.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="photo">
+                                                <img src="images/javascreen15.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sidebar">
+                        <div class="widget">
+                            <h2>All Projects</h2>
+                            <ul>
+                                <li><a href="python-project.html">Python Programming Project 1</a></li>
+                                <li><a href="java-project.html">Java Programming Project 1</a></li>
+                                <li><a href="web-project.html">Interactive Web Authoring Project 1</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget">
+                            <h2>Project Detail</h2>
+                                <div class="project-detail">
+                                    <div class="item">
+                                    <div class="name">Module Name</div>
+                                    <div class="value">COM102-Programming 2</div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">Date Submitted</div>
+                                    <div class="value">March 2023</div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">Grade Achieved</div>
+                                    <div class="value">96%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- FOOTER SECTION of the page. Somewhere to show website logo and a brief closing comment -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo d-flex justify-content-center">
+                        <img src="images/logo-no-background.png" alt="">
+                    </div>
+                    <div class="description">
+                        
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        Copyright 2023, All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="" class="scrollup">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- J Query inserted below -->   
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/filter.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
