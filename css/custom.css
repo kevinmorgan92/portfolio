@@ -77,18 +77,28 @@ nav .nav-item .nav-link:hover {
     background: rgb(80, 80, 253);
     color: #fff;
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1024px) {
     .home-banner .right img {
-        max-width: 110%;
-    }
-}
-@media only screen and (max-width:992px) {
-    .home-banner .right img {
-        height: 250px;
         max-width: 125%;
     }
 }
+@media only screen and (max-width:768px) {
+    .home-banner .right img {
+        display:none;
+    }
+}
 @media only screen and (max-width:992px) {
+    .home-banner .right img {
+        max-width: 150%;
+    }
+    .home-banner .left {
+        margin-top: 40px;
+    }
+    .home-banner .left .button {
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width:768px) {
     .home-banner .left {
         margin-top: 40px;
     }
@@ -553,7 +563,9 @@ nav .nav-item .nav-link:hover {
     }
 }
 @media only screen and (max-width: 575px) {
-
+    .grade-carousel .item .comment {
+        display:none;
+    }
 }
 /* Home Page - Latest Blog Section */
 .blog {
